@@ -105,3 +105,5 @@ Full documentation at [babelwrap.com/docs/mcp](https://babelwrap.com/docs/mcp)
 ## License
 
 MIT
+
+<!-- mcp-name: io.github.soulfir/babelwrap-mcp -->
