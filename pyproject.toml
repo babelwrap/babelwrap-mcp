@@ -26,8 +26,8 @@ babelwrap-mcp = "babelwrap_mcp.server:main"
 [project.urls]
 Homepage = "https://babelwrap.com"
 Documentation = "https://babelwrap.com/docs/mcp"
-Repository = "https://github.com/soulfir/babelwrap-mcp"
-Issues = "https://github.com/soulfir/babelwrap-mcp/issues"
+Repository = "https://github.com/babelwrap/babelwrap-mcp"
+Issues = "https://github.com/babelwrap/babelwrap-mcp/issues"
 
 [build-system]
 requires = ["setuptools>=75"]
