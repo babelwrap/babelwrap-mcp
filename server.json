@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.babelwrap/babelwrap-mcp",
-  "description": "MCP server for BabelWrap — give AI agents web browsing superpowers. Navigate, extract, search, screenshot, and interact with any webpage.",
+  "description": "MCP server for BabelWrap — give AI agents web browsing superpowers.",
   "repository": {
     "url": "https://github.com/babelwrap/babelwrap-mcp",
     "source": "github"
