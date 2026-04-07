@@ -1,35 +1,29 @@
 {
-  "name": "babelwrap-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.babelwrap/babelwrap-mcp",
   "description": "MCP server for BabelWrap — give AI agents web browsing superpowers. Navigate, extract, search, screenshot, and interact with any webpage.",
+  "repository": {
+    "url": "https://github.com/babelwrap/babelwrap-mcp",
+    "source": "github"
+  },
   "version": "0.1.1",
-  "repository": "https://github.com/babelwrap/babelwrap-mcp",
-  "homepage": "https://babelwrap.com",
-  "license": "MIT",
-  "runtime": "python",
   "packages": [
     {
-      "registry_name": "pypi",
-      "name": "babelwrap-mcp"
+      "registryType": "pip",
+      "identifier": "babelwrap-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Your BabelWrap API key. Get one at https://babelwrap.com",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "BABELWRAP_API_KEY"
+        }
+      ]
     }
-  ],
-  "tools": [
-    { "name": "babelwrap_new_session", "description": "Create a new browser session for web interaction" },
-    { "name": "babelwrap_close_session", "description": "Close and clean up a browser session" },
-    { "name": "babelwrap_navigate", "description": "Navigate to a URL and get a structured snapshot" },
-    { "name": "babelwrap_snapshot", "description": "Get the current page state as a structured snapshot" },
-    { "name": "babelwrap_click", "description": "Click an element using natural language description" },
-    { "name": "babelwrap_fill", "description": "Fill an input field with a value" },
-    { "name": "babelwrap_submit", "description": "Submit a form on the current page" },
-    { "name": "babelwrap_extract", "description": "Extract structured data using natural language query" },
-    { "name": "babelwrap_screenshot", "description": "Take a screenshot of the current page" },
-    { "name": "babelwrap_press", "description": "Press a keyboard key" },
-    { "name": "babelwrap_upload", "description": "Upload a file to a file input element" },
-    { "name": "babelwrap_hover", "description": "Hover over an element on the page" },
-    { "name": "babelwrap_back", "description": "Navigate back in browser history" },
-    { "name": "babelwrap_forward", "description": "Navigate forward in browser history" },
-    { "name": "babelwrap_scroll", "description": "Scroll the page up or down" },
-    { "name": "babelwrap_wait_for", "description": "Wait for a condition on the page" },
-    { "name": "babelwrap_list_pages", "description": "List all open pages/tabs in the session" },
-    { "name": "babelwrap_switch_page", "description": "Switch to a different tab/popup" }
   ]
 }
